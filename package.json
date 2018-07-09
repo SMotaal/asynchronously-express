@@ -4,12 +4,13 @@
   "description": "Pure async functions as Express middleware",
   "author": "Saleh Abdel Motaal <saleh@grasppe.com>",
   "license": "MIT",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "asynchronously-express.mjs",
   "files": [
     "asynchronously-express.mjs",
     "README.md"
   ],
+  "repository": "https://github.com/SMotaal/asynchronously-express",
   "devDependencies": {
     "@types/node": "*"
   },
@@ -18,8 +19,5 @@
   },
   "engines": {
     "node": "^10.5.0"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
