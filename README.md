@@ -6,6 +6,7 @@ Pure async functions as Express middleware
 
 ```js
 import express from 'express';
+import asynchronously from 'asynchronously-express';
 
 const app = express();
 
