@@ -1,0 +1,25 @@
+{
+  "name": "asynchronously-express",
+  "displayName": "Asynchronously Express",
+  "description": "Pure async functions as Express middleware",
+  "author": "Saleh Abdel Motaal <saleh@grasppe.com>",
+  "license": "MIT",
+  "version": "0.0.0",
+  "main": "asynchronously-express.mjs",
+  "files": [
+    "asynchronously-express.mjs",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@types/node": "*"
+  },
+  "peerDependencies": {
+    "express": "^4"
+  },
+  "engines": {
+    "node": "^10.5.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
