@@ -4,7 +4,7 @@
   "description": "Pure async functions as Express middleware",
   "author": "Saleh Abdel Motaal <saleh@grasppe.com>",
   "license": "MIT",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "asynchronously-express.mjs",
   "module": "asynchronously-express.mjs",
   "files": [
@@ -15,8 +15,8 @@
   ],
   "repository": "https://github.com/SMotaal/asynchronously-express",
   "devDependencies": {
-    "@types/node": "*",
-    "@types/express": "*"
+    "@types/express": "*",
+    "@types/node": "*"
   },
   "peerDependencies": {
     "express": "^4"
