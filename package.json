@@ -1,18 +1,22 @@
 {
   "name": "asynchronously-express",
-  "displayName": "Asynchronously Express",
+  "displayName": "Asynchronously Express (experimental)",
   "description": "Pure async functions as Express middleware",
   "author": "Saleh Abdel Motaal <saleh@grasppe.com>",
   "license": "MIT",
   "version": "0.0.2",
   "main": "asynchronously-express.mjs",
+  "module": "asynchronously-express.mjs",
   "files": [
     "asynchronously-express.mjs",
+    "asynchronously-express.mjs.d.ts",
+    "index.d.ts",
     "README.md"
   ],
   "repository": "https://github.com/SMotaal/asynchronously-express",
   "devDependencies": {
-    "@types/node": "*"
+    "@types/node": "*",
+    "@types/express": "*"
   },
   "peerDependencies": {
     "express": "^4"

@@ -1,6 +1,10 @@
-Asynchronously Express
+# Asynchronously Express *(experimental)*
 
 Pure async functions as Express middleware
+
+
+| ⚠️ Experimental use only <details> requires `--experimental-modules` flag
+|-
 
 ## Usage
 
@@ -23,11 +27,18 @@ app.use(
 
 ## Options
 
-enabled <boolean> toggles the patch for debugging
-(can only disable before app.use() is called)
-send <boolean> sends formatted response
-log <boolean> logs to console
-(always on if send is off)
+#### enabled `boolean`
+  toggles the patch for debugging
+
+  > can only disable before `app.use()` is called
+
+#### send `boolean`
+  sends formatted response
+
+#### log `boolean`
+  toggles the patch for debugging
+
+  > always on if send is off
 
 ## Gotchas
 
