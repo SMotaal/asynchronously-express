@@ -4,7 +4,7 @@
   "description": "Pure async functions as Express middleware",
   "author": "Saleh Abdel Motaal <saleh@grasppe.com>",
   "license": "MIT",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "main": "asynchronously-express.mjs",
   "module": "asynchronously-express.mjs",
   "files": [
