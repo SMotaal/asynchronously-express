@@ -1,6 +1,6 @@
 import Layer from 'express/lib/router/layer';
 
-export const asynchronously = options => (
+const asynchronously = options => (
   assign(asynchronously, options), reporter
 );
 
@@ -50,20 +50,25 @@ function initialize() {
   }
 }
 
-export const reporter = (error, request, response, next) => {
+export function reporter(error, request, response, next) {
   if (asynchronously.send)
     response.status(500).send(`<pre>${error.stack || error}</pre>`);
   if (asynchronously.log || !asynchronously.send)
     console.warn(`[Caught] ${error}`);
   next();
-};
+}
 
-export const testware = ({originalUrl}, response, next) => {
+export function testware({originalUrl}, response, next) {
   if (originalUrl === '/testware/throws') throw Error(originalUrl);
   else if (originalUrl === '/testware/rejects')
     return Promise.reject(Error(originalUrl));
-};
+  next();
+}
 
 asynchronously.testware = testware;
 
-export default initialize();
+initialize();
+
+export { asynchronously }
+
+export default asynchronously;
