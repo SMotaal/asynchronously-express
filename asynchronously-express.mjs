@@ -57,6 +57,7 @@ function initialize() {
   asynchronously.enabled = asynchronously.send = asynchronously.log = true;
 
   /* PATCH */
+  // TODO: Explore finer-grained patching options
   const layer = 'express/lib/router/layer';
   try {
     const Layer = require(require.resolve(layer));

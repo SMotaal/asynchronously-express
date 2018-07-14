@@ -1,1 +1,1 @@
-export * from './asynchronously-express.mjs';
+export * from './asynchronously-express';

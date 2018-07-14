@@ -10,6 +10,7 @@
   "files": [
     "asynchronously-express.mjs",
     "asynchronously-express.mjs.d.ts",
+    "commonjs.mjs",
     "index.d.ts",
     "README.md"
   ],
